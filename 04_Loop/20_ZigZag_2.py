@@ -9,13 +9,13 @@ while True:
     s = input()
     if s == 'Zig-Zag' or s == 'Zag-Zig':
         if s == 'Zig-Zag':
-            print(min_1, max_2)
-        else:
             print(min_2, max_1)
+        else:
+            print(min_1, max_2)
         break
     else:
-        x, y = map(int, input().split())
-        
+        x = int(s.split()[0])
+        y = int(s.split()[1])
         if i == 0:
             min_1 = x
             max_1 = x
@@ -26,5 +26,4 @@ while True:
             max_1 = max(max_1, x)
             min_2 = min(min_2, y)
             max_2 = max(max_2, y)
-
-        i = (i + 1) % 2
+    i += 1

@@ -26,6 +26,12 @@ else:
   else:
     if a > d:
       a = a - 2
-      c = c + a
+      while a >= b:
+        if a <= d:
+          break
+        a = a - 2
+        if a < b:
+          break
+        c = c + a
       
 print(a, b, c, d)

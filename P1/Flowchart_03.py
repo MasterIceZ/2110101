@@ -22,16 +22,13 @@ else:
       c = c / d
     if b > 3:
       c = c + c ** d
-    a = math.log(c, 10)
+    else:
+      a = math.log(c, 10)
   else:
-    if a > d:
+    while a > d:
       a = a - 2
-      while a >= b:
-        if a <= d:
-          break
-        a = a - 2
-        if a < b:
-          break
-        c = c + a
+      if a < b:
+        break
+      c = c + a
       
 print(a, b, c, d)

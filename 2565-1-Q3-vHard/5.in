@@ -1,0 +1,16 @@
+Ally 1 2
+Enemy 1 a
+Ally 2 3
+Ally 1 4
+Ally 1 5
+Ally 5 2
+Enemy z a
+Ally z x
+Ally x y
+Ally y w
+Table w y x z
+Table w a y x
+Table 1 10 a 20 y 
+Table 1 a
+Table 3 b
+End

@@ -3,3 +3,6 @@
 *.sol
 
 .DS_Store
+
+.cph/
+*.bin

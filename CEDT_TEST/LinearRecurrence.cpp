@@ -20,7 +20,7 @@ int main() {
     r[i] = a[i];
   }
   for(int i=k; i<=n; ++i) {
-    for(int j=1; j<=i; ++j) {
+    for(int j=1; j<=min(i, k); ++j) {
       ll cur = (r[i - j] * c[j]) % MOD;
       r[i] = (r[i] + cur) % MOD;
     }
